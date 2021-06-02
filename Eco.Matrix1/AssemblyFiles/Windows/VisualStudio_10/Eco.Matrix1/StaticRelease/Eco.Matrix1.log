@@ -1,0 +1,49 @@
+﻿Build started Пн 17.05.21 11:10:50.
+     1>Project "D:\EcoProjects\hse\Eco.Framework\Eco.Matrix1\AssemblyFiles\Windows\VisualStudio_10\Eco.Matrix1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Eco.Matrix1\StaticRelease\Eco.Matrix1.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\visual basic\VC\bin\CL.exe /c /I..\..\..\HeaderFiles /I..\..\..\SharedFiles /I..\..\..\..\Eco.Core1\SharedFiles /I..\..\..\..\Eco.Vector1\SharedFiles /I..\..\..\..\Eco.String1\SharedFiles /I..\..\..\..\Eco.List1\SharedFiles /I..\..\..\..\Eco.Comparator1\SharedFiles /I..\..\..\..\Eco.MemoryManager1\SharedFiles /I..\..\..\..\Eco.InterfaceBus1\SharedFiles /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D ECO_WIN32 /D NDEBUG /D _WINDOWS /D ECO_LIB /D UGUID_UTILITY /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Eco.Matrix1\StaticRelease\\" /Fd"Eco.Matrix1\StaticRelease\vc100.pdb" /Gz /TC /analyze- /errorReport:prompt ..\..\..\SourceFiles\CEcoMatrix1.c ..\..\..\SourceFiles\CEcoMatrix1Factory.c
+         CEcoMatrix1.c
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(267): warning C4033: 'CEcoMatrix1_Clear' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(270): warning C4033: 'CEcoMatrix1_Clear' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(289): warning C4033: 'CEcoMatrix1_Transpose' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(292): warning C4033: 'CEcoMatrix1_Transpose' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(311): warning C4033: 'CEcoMatrix1_reshape' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(314): warning C4033: 'CEcoMatrix1_reshape' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(355): warning C4033: 'CEcoMatrix1_map' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(358): warning C4033: 'CEcoMatrix1_map' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(377): warning C4033: 'CEcoMatrix1_replaceValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(380): warning C4033: 'CEcoMatrix1_replaceValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(399): warning C4033: 'CEcoMatrix1_addValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(402): warning C4033: 'CEcoMatrix1_addValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(421): warning C4033: 'CEcoMatrix1_subValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(424): warning C4033: 'CEcoMatrix1_subValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(443): warning C4033: 'CEcoMatrix1_mulValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(446): warning C4033: 'CEcoMatrix1_mulValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(465): warning C4033: 'CEcoMatrix1_divValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(468): warning C4033: 'CEcoMatrix1_divValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(487): warning C4033: 'CEcoMatrix1_modValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(490): warning C4033: 'CEcoMatrix1_modValue' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(509): warning C4033: 'CEcoMatrix1_addMatrix' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(512): warning C4033: 'CEcoMatrix1_addMatrix' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(576): warning C4033: 'CEcoMatrix1_join' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(579): warning C4033: 'CEcoMatrix1_join' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(620): warning C4033: 'CEcoMatrix1_GetRow' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(623): warning C4033: 'CEcoMatrix1_GetRow' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(642): warning C4033: 'CEcoMatrix1_renameColumns' must return a value
+     1>..\..\..\SourceFiles\CEcoMatrix1.c(645): warning C4033: 'CEcoMatrix1_renameColumns' must return a value
+         CEcoMatrix1Factory.c
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(D:\EcoProjects\hse\Eco.Framework\Eco.Matrix1\AssemblyFiles\Windows\VisualStudio_10\Eco.Matrix1\StaticRelease\9A659401C9334EF6970F7F5FE68577AA.lib) does not match the Library's OutputFile property value (D:\EcoProjects\hse\Eco.Framework\Eco.Matrix1\BuildFiles\Windows\x86\StaticRelease\9A659401C9334EF6970F7F5FE68577AA.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         D:\visual basic\VC\bin\Lib.exe /OUT:"..\..\..\BuildFiles\Windows\x86\StaticRelease\9A659401C9334EF6970F7F5FE68577AA.lib" /NOLOGO /LTCG Eco.Matrix1\StaticRelease\CEcoMatrix1.obj
+         Eco.Matrix1\StaticRelease\CEcoMatrix1Factory.obj
+         Eco.Matrix1.vcxproj -> D:\EcoProjects\hse\Eco.Framework\Eco.Matrix1\AssemblyFiles\Windows\VisualStudio_10\Eco.Matrix1\StaticRelease\9A659401C9334EF6970F7F5FE68577AA.lib
+       FinalizeBuildStatus:
+         Deleting file "Eco.Matrix1\StaticRelease\Eco.Matrix1.unsuccessfulbuild".
+         Touching "Eco.Matrix1\StaticRelease\Eco.Matrix1.lastbuildstate".
+     1>Done Building Project "D:\EcoProjects\hse\Eco.Framework\Eco.Matrix1\AssemblyFiles\Windows\VisualStudio_10\Eco.Matrix1.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.80

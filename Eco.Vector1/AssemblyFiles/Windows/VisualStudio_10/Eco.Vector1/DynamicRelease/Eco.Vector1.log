@@ -1,0 +1,26 @@
+﻿Build started Сб 10.04.21 16:54:46.
+     1>Project "D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Eco.Vector1\DynamicRelease\Eco.Vector1.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\visual basic\VC\bin\CL.exe /c /I..\..\..\HeaderFiles /I..\..\..\SharedFiles /I..\..\..\..\Eco.Core1\SharedFiles /I..\..\..\..\Eco.String1\SharedFiles /I..\..\..\..\Eco.List1\SharedFiles /I..\..\..\..\Eco.Comparator1\SharedFiles /I..\..\..\..\Eco.MemoryManager1\SharedFiles /I..\..\..\..\Eco.InterfaceBus1\SharedFiles /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D ECO_WIN32 /D NDEBUG /D _WINDOWS /D ECO_DLL /D UGUID_UTILITY /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Eco.Vector1\DynamicRelease\\" /Fd"Eco.Vector1\DynamicRelease\vc100.pdb" /Gz /TC /analyze- /errorReport:prompt ..\..\..\SourceFiles\CEcoVector1.c ..\..\..\SourceFiles\CEcoVector1Factory.c
+         CEcoVector1.c
+         CEcoVector1Factory.c
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.dll) does not match the Linker's OutputFile property value (D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\BuildFiles\Windows\x86\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         D:\visual basic\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\BuildFiles\Windows\x86\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Eco.Vector1\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.lib" /MACHINE:X86 /DLL Eco.Vector1\DynamicRelease\CEcoVector1.obj
+         Eco.Vector1\DynamicRelease\CEcoVector1Factory.obj
+            Creating library D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.lib and object D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.exp
+         Generating code
+         Finished generating code
+         Eco.Vector1.vcxproj -> D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\..\BuildFiles\Windows\x86\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.dll;#2" /manifest Eco.Vector1\DynamicRelease\2A3866FF01C74D03819CFD138812B4A1.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Eco.Vector1\DynamicRelease\Eco.Vector1.unsuccessfulbuild".
+         Touching "Eco.Vector1\DynamicRelease\Eco.Vector1.lastbuildstate".
+     1>Done Building Project "D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.31

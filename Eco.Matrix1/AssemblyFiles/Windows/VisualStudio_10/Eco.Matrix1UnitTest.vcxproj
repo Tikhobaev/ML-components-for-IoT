@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="StaticDebug|Win32">
+      <Configuration>StaticDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="StaticRelease|Win32">
+      <Configuration>StaticRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{423AFEE5-0CF5-46E0-8C47-D0474414670D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>EcoMatrix1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='StaticDebug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='StaticDebug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='StaticRelease|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='StaticDebug|Win32'">
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|Win32'">
+    <OutDir>$(SolutionDir)$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticDebug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\SharedFiles;..\..\..\HeaderFiles;..\..\..\UnitTestFiles\SharedFiles;..\..\..\UnitTestFiles\HeaderFiles;..\..\..\..\Eco.Core1\SharedFiles;..\..\..\..\Eco.FileSystemManagement1\SharedFiles;..\..\..\..\Eco.Vector1\SharedFiles;..\..\..\..\Eco.Comparator1\SharedFiles;..\..\..\..\Eco.DateTime1\SharedFiles;..\..\..\..\Eco.Log1\SharedFiles;..\..\..\..\Eco.List1\SharedFiles;..\..\..\..\Eco.String1\SharedFiles;..\..\..\..\Eco.InterfaceBus1\SharedFiles;..\..\..\..\Eco.TaskScheduler1\SharedFiles;..\..\..\..\Eco.MemoryManager1\SharedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <CompileAs>CompileAsC</CompileAs>
+      <PreprocessorDefinitions>ECO_WIN32;_DEBUG;_CONSOLE;ECO_LIB;UGUID_UTILITY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticDebug\;..\..\..\..\Eco.Comparator1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticDebug\;..\..\..\..\Eco.DateTime1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticDebug\;..\..\..\..\Eco.List1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticDebug\;..\..\..\..\Eco.Log1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticDebug\;..\..\..\..\Eco.String1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticDebug\;..\..\..\..\Eco.System1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticDebug\;..\..\..\..\Eco.InterfaceBus1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticDebug\;..\..\..\..\Eco.MemoryManager1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticDebug\;..\..\..\..\Eco.Vector1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticDebug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>00000000000000000000000042757331.lib;0000000000000000000000004D656D31.lib;00000000000000000000000000000100.lib;9A659401C9334EF6970F7F5FE68577AA.lib;C7ED3BA4B6EB4385BBDB3C6AC5C7A394.lib;84CC0A7DBABD44EEBE749C9A8312D37E.lib;2A3866FF01C74D03819CFD138812B4A1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='StaticRelease|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>..\..\..\SharedFiles;..\..\..\HeaderFiles;..\..\..\UnitTestFiles\SharedFiles;..\..\..\UnitTestFiles\HeaderFiles;..\..\..\..\Eco.Core1\SharedFiles;..\..\..\..\Eco.FileSystemManagement1\SharedFiles;..\..\..\..\Eco.Vector1\SharedFiles;..\..\..\..\Eco.Comparator1\SharedFiles;..\..\..\..\Eco.DateTime1\SharedFiles;..\..\..\..\Eco.Log1\SharedFiles;..\..\..\..\Eco.List1\SharedFiles;..\..\..\..\Eco.String1\SharedFiles;..\..\..\..\Eco.InterfaceBus1\SharedFiles;..\..\..\..\Eco.TaskScheduler1\SharedFiles;..\..\..\..\Eco.MemoryManager1\SharedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ECO_WIN32;NDEBUG;_CONSOLE;ECO_LIB;UGUID_UTILITY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticRelease\;..\..\..\..\Eco.Comparator1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticRelease\;..\..\..\..\Eco.DateTime1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticRelease\;..\..\..\..\Eco.Log1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticRelease\;..\..\..\..\Eco.List1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticRelease\;..\..\..\..\Eco.String1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticRelease\;..\..\..\..\Eco.InterfaceBus1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticRelease\;..\..\..\..\Eco.MemoryManager1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticRelease\;..\..\..\..\Eco.System1\BuildFiles\$(TargetPlatformIdentifier)\$(ProcessorArchitecture)\StaticRelease\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>00000000000000000000000042757331.lib;0000000000000000000000004D656D31.lib;00000000000000000000000000000100.lib;9A659401C9334EF6970F7F5FE68577AA.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\UnitTestFiles\SourceFiles\EcoMatrix1.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

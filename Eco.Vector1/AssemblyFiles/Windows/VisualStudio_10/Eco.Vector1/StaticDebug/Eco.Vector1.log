@@ -1,0 +1,20 @@
+﻿Build started Вт 01.06.21 0:09:06.
+     1>Project "D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Eco.Vector1\StaticDebug\Eco.Vector1.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\visual basic\VC\bin\CL.exe /c /I..\..\..\HeaderFiles /I..\..\..\SharedFiles /I..\..\..\..\Eco.Core1\SharedFiles /I..\..\..\..\Eco.String1\SharedFiles /I..\..\..\..\Eco.List1\SharedFiles /I..\..\..\..\Eco.Comparator1\SharedFiles /I..\..\..\..\Eco.MemoryManager1\SharedFiles /I..\..\..\..\Eco.InterfaceBus1\SharedFiles /ZI /nologo /W3 /WX- /Od /Oy- /D ECO_WIN32 /D _DEBUG /D _WINDOWS /D ECO_LIB /D UGUID_UTILITY /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Eco.Vector1\StaticDebug\\" /Fd"Eco.Vector1\StaticDebug\vc100.pdb" /Gz /TC /analyze- /errorReport:prompt ..\..\..\SourceFiles\CEcoVector1.c
+         CEcoVector1.c
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1\StaticDebug\2A3866FF01C74D03819CFD138812B4A1.lib) does not match the Library's OutputFile property value (D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\BuildFiles\Windows\x86\StaticDebug\2A3866FF01C74D03819CFD138812B4A1.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         D:\visual basic\VC\bin\Lib.exe /OUT:"..\..\..\BuildFiles\Windows\x86\StaticDebug\2A3866FF01C74D03819CFD138812B4A1.lib" /NOLOGO Eco.Vector1\StaticDebug\CEcoVector1.obj
+         Eco.Vector1\StaticDebug\CEcoVector1Factory.obj
+         Eco.Vector1.vcxproj -> D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1\StaticDebug\2A3866FF01C74D03819CFD138812B4A1.lib
+       FinalizeBuildStatus:
+         Deleting file "Eco.Vector1\StaticDebug\Eco.Vector1.unsuccessfulbuild".
+         Touching "Eco.Vector1\StaticDebug\Eco.Vector1.lastbuildstate".
+     1>Done Building Project "D:\EcoProjects\hse\Eco.Framework\Eco.Vector1\AssemblyFiles\Windows\VisualStudio_10\Eco.Vector1.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.57
